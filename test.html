@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>Bootply snippet - Bootstrap Bootstrap Modal with AJAX</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet">
+    <!--     Line not working: -->
+
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+   <link href="css/starter-template.css" rel="stylesheet">
+      
+    </head>
+    
+    <!-- HTML code from Bootply.com editor -->
+    
+    <body  >
+        
+      <a href="#" class="btn" id="openBtn">Open modal</a>
+
+      <div id="map">
+      </div>
+
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+              <h3>Modal header</h3>
+          </div>
+          <div class="modal-body">
+            <p>My modal content here…</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+        
+        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script type='text/javascript' src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+        <script type='text/javascript'>
+        $(document).ready(function() {
+            $('#openBtn').click(function(){
+            $('.modal-body').load('test2.html',function(result){
+            $('#myModal').modal({show:true});
+        });
+        }); 
+        });
+        </script>
+        
+      
+        
+        
+    </body>
+</html>

@@ -10,13 +10,22 @@
 	@font-face {
 	    font-family: TokyoOneSolid;
 	    src: url(fonts/Tokyo-OneSolid.otf);
-
 	}
+  @font-face {
+      font-family: Deftone;
+      src: url(fonts/DEFTONE.ttf);
+  }
 	.tokyocustomfont { 
 		font-family: TokyoOneSolid;
 		font-size: 30px;
     	color: white;
 	}
+  .rock {
+    font-family: Deftone;
+    font-size: 30px;
+    color: #e50041;
+  }
+
 	</style>
 	<script src="https://code.jquery.com/jquery-2.0.3.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
@@ -36,7 +45,7 @@
 
     <div id="todoapp">
 	    <div class="title">
-        <h1 class="tokyocustomfont" style="background-color: #e50041;">SOUNDTRACKED</h1>
+        <h1 class="tokyocustomfont" style="background-color: #e50041; color: white;">SOUNDTRACKED</h1>
 </div>
 
 <table cellpadding="0" cellspacing="0" height="100%" width="100%">
@@ -90,7 +99,6 @@
         Signed in as <%= Parse.User.current().escape("username") %> (<a href="#" class="log-out">Log out</a>)
       </div>
 
-      <img src="images/welcome2.png" height="630" width="357" boarder="0">
 
       <div class="starter-template">
 <button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('rushing')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color: #f7a51b;">
@@ -147,25 +155,27 @@
         Signed in as <%= Parse.User.current().escape("username") %> (<a href="#" class="log-out">Log out</a>)
       </div>
 
-      <img src="images/welcome2.png" height="630" width="357" boarder="0">
 
-      <div class="starter-template">
-<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('rushing')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color: #f7a51b;">
-				RUSHING
-			</button>
-			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('striding')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color: #bccb42;">
-				STRIDING
-			</button>
-			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('walking')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color:#5fb25f;">
-				WALKING
-			</button>
-			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('strolling')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color:#4cb6a8">
-				STROLLING
-			</button>
-			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('lounging')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color:#0098a8">
-				LOUNGING
-			</button>
-	
+      <div class="starter-template" style="background-image: url(images/background.jpg);">
+      <img src="images/avatar.png"></img>
+      <p class="rock"> Welcome back </p>
+      <p class="rock"> "What's your speed? "</p>
+
+        <button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('rushing')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color: #f7a51b;">
+  				RUSHING
+  			</button>
+  			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('striding')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color: #bccb42;">
+  				STRIDING
+  			</button>
+  			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('walking')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color:#5fb25f;">
+  				WALKING
+  			</button>
+  			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('strolling')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color:#4cb6a8">
+  				STROLLING
+  			</button>
+  			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('lounging')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color:#0098a8">
+  				LOUNGING
+  			</button>
 		</div>
 
 //     <div class="section">

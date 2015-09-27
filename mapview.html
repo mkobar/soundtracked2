@@ -16,6 +16,9 @@
     html, body, #map {
       height: 100%;
     }
+    #myModal {
+      style={background-color: white !important;} 
+    }
 
   </style>
   <style>
@@ -56,13 +59,26 @@
           <li class="active" style="color: white;"><a href="#">Home</a></li>
           <li><a href="#about" style="color: white;">About</a></li>
           <li><a href="#contact" style="color: white;">Contact</a></li>
+          <li><a href="#" class="btn" id="openBtn">Drop!</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-    <div id="map">
+  <div id="map">
   </div>
+        <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">×</button>
+              <h3>Modal header</h3>
+          </div>
+          <div class="modal-body">
+            <p>My modal content here…</p>
+          </div>
+          <div class="modal-footer">
+            <button class="btn" data-dismiss="modal">Close</button>
+          </div>
+        </div>
   
 <!-- not https!! so using local version of same file
 	<script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
@@ -74,6 +90,11 @@
   <!-- Placed at the end of the document so the pages load faster -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="modallist.js">
+  </script>
+  <script src="soundtracked.js">
+  </script>
+
 	<script>
 		var map = L.map('map').setView([40.74486725088441, -73.98499131202698], 17);
 		L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6IjZjNmRjNzk3ZmE2MTcwOTEwMGY0MzU3YjUzOWFmNWZhIn0.Y8bhBaUMqFiPrDRW9hieoQ', {
@@ -83,8 +104,8 @@
 			'Imagery © <a href="http://mapbox.com">Mapbox</a>',
 		id: 'mapbox.streets'
     }).addTo(map);
-
-	var marker = L.marker([40.74486725088441, -73.98499131202698]).addTo(map);
+    //TODO
+    //var marker = L.marker([40.74486725088441, -73.98499131202698], {icon: bluePointer}).addTo(map);
 
 	// show a dropdown on the map
 	// var legend = L.control({position: 'topright'});
@@ -97,9 +118,6 @@
 	// legend.addTo(map);
 
 	</script>
-	<script src="soundtracked.js">
-	
-		
-	</script>
+
 </body>
 </html>
