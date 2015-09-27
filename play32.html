@@ -10,13 +10,12 @@
     <!--
     <script src="https://www.rdio.com/api/api.js?client_id=idniu4ntlzdrfdknocpctjhgsi"></script>
     -->
-    <!-- for localhost 
+    <!-- for localhost -->
     <script src="https://www.rdio.com/api/api.js?client_id=dq3wsxoke5curkxmi2wruch4dy"></script>
-    -->
     
-    <!-- for github 2 version -->
+    <!-- for github 2 version 
     <script src="https://www.rdio.com/api/api.js?client_id=gkgx6phgefe2zplaiuwth3jela"></script>
-    
+    -->
 
     <script src="lib/jquery-1.9.1.min.js"></script>
     <script src="lib/underscore-1.4.4.min.js"></script>
@@ -29,7 +28,7 @@
   </head>
   <body>
 	  <div class="log"></div>
-	  <select id="songlist" name="songkey" size="5" onClick="myFunction();">
+	  <select id="songlist" name="songkey" size="5" onClick="myFunction()">
 		  <option value="t69393056">Blank Space - Ryan Adams</option>
 		  <option value="t67821878">Hotline Bling - Drake</option>
 		  <option value="t68618007">What Do You Mean? - Justin Bieber</option>
@@ -52,6 +51,7 @@
 	  <div id="saveit-key"></div>
 
 	  <script>
+
 		  function myFunction() {
 			// set the background color of <body> to yellow
 			//document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
@@ -61,6 +61,6 @@
 			$('#playbutton').append("onClick=\"R.player.play({source: " + y + "});\""); 
 		}		  
 	  </script>
-		<input id="playbutton" type="button" value="play song">
+			<input id="playbutton" type="button" value="play song">
   </body>
 </html>
