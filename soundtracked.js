@@ -1,7 +1,6 @@
 var blueNote = L.icon({
     iconUrl: 'images/bluenote.png',
     shadowUrl: 'images/shadownote.png',
-
     //iconSize:     [38, 95], // size of the icon
     //shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [12, 60], // point of the icon which will correspond to marker's location
@@ -11,11 +10,16 @@ var blueNote = L.icon({
 var yellowNote = L.icon({
     iconUrl: 'images/yellownote.png',
     shadowUrl: 'images/shadownote.png',
-
     //iconSize:     [38, 95], // size of the icon
     //shadowSize:   [50, 64], // size of the shadow
     iconAnchor:   [12, 60], // point of the icon which will correspond to marker's location
     shadowAnchor: [4, 38],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var bluePointer = L.icon({
+    iconUrl: 'images/bluePointer.png',
+    iconAnchor:   [12, 60], // point of the icon which will correspond to marker's location
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
@@ -49,8 +53,6 @@ function GetJsonFile(chosenMood){
 		var items = [];
 		$.each( data, function( key, val ) {
 			var songs = GetSongsFromJson(val, chosenMood);
-
-
 			var markers = AddMarkersForSongsInTheMood(songs);
 			
 			if (markers.length > 0){
