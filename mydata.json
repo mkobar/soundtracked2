@@ -3,8 +3,8 @@
     {
         "song": "Where Ya At (feat. Drake)",
         "location": {"lat":40.7453286, "lon":-73.9855151},
-	"artist": "Future",
-	"key": "t67143036",
+	    "artist": "Future",
+	    "key": "t67143036",
         "mood": "walking"
         },
     {
@@ -27,7 +27,7 @@
 	"artist": "Coin",
 	"key": "t41904969",
         "mood": "rushing"
-    }
+    },
     {
         "song": "Look Me in the Face",
         "location": {"lat":40.7453296, "lon":-73.985575},
