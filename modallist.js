@@ -23,7 +23,7 @@ function onLocationFound(e) {
 
   function DropSelectedTrack(mood){
   	globalmood = mood;
-	map.locate({setView: true, maxZoom: 16});
+	map.locate({setView: true, maxZoom: 17});
 	map.on('locationfound', onLocationFound);
 
   }

@@ -1,24 +1,123 @@
 {
     "items": [
     {
-        "song": "Macarena",
+        "song": "Where Ya At (feat. Drake)",
         "location": {"lat":40.7453286, "lon":-73.9855151},
-        "mood": "rushing"
+	"artist": "Future",
+	"key": "t67143036",
+        "mood": "walking"
         },
     {
-        "song": "Hello World",
+        "song": "Weekend (feat. Miguel)",
         "location": {"lat":40.74538, "lon":-73.9859},
-        "mood": "strolling"
+	"artist": "Mac Miller",
+	"key": "t69223631",
+        "mood": "striding"
     },
     {
         "song": "Let it be",
         "location": {"lat":40.74535, "lon":-73.983},
-        "mood": "walking"
+	"artist": "The Beatles",
+	"key": "t41904969",
+        "mood": "lounging"
         },
     {
         "song": "Coin",
         "location": {"lat":40.74353417699335, "lon":-73.98458361625671},
+	"artist": "Coin",
+	"key": "t41904969",
         "mood": "rushing"
     }
+    {
+        "song": "Look Me in the Face",
+        "location": {"lat":40.7453296, "lon":-73.985575},
+	"artist": "Jerk Circus",
+	"key": "t41904969",
+        "mood": "lounging"
+        },
+    {
+        "song": "Hotline Bling",
+        "location": {"lat":40.74548, "lon":-73.9859},
+	"artist": "Drake",
+	"key": "t67821878",
+        "mood": "rushing"
+        },
+    {
+        "song": "Stitches",
+        "location": {"lat":40.74535, "lon":-73.9851},
+	"artist": "Shawn Mendes",
+	"key": "t63745991",
+        "mood": "walking"
+        },
+    {
+        "song": "What Do You Mean?",
+        "location": {"lat":40.74538, "lon":-73.9859},
+	"artist": "Justin Bieber",
+	"key": "t68618007",
+        "mood": "striding"
+        },
+    {
+        "song": "Good For You",
+        "location": {"lat":40.74335, "lon":-73.9801},
+	"artist": "Selena Gomez",
+	"key": "t66136860",
+        "mood": "lounging"
+        },
+    {
+        "song": "Lifeless",
+        "location": {"lat":40.74638, "lon":-73.9849},
+	"artist": "Draenor",
+	"key": "t69405066",
+        "mood": "lounging"
+        },
+    {
+        "song": "On My Mind",
+        "location": {"lat":40.74353417699335, "lon":-73.98458361625671},
+	"artist": "Ellie Goulding",
+	"key": "t69271072",
+        "mood": "strolling"
+        },
+    {
+        "song": "The Hills",
+        "location": {"lat":40.74735, "lon":-73.983},
+	"artist": "The Weeknd",
+	"key": "t68552037",
+        "mood": "walking"
+        },
+    {
+        "song": "Infinity",
+        "location": {"lat":40.74568, "lon":-73.9821},
+	"artist": "One Direction",
+	"key": "t69563849",
+        "mood": "striding"
+        },
+    {
+        "song": "Back To Back",
+        "location": {"lat":40.74515, "lon":-73.987},
+	"artist": "Drake",
+	"key": "t67820642",
+        "mood": "rushing"
+        },
+    {
+        "song": "Gibraltar",
+        "location": {"lat":40.74353417621, "lon":-73.9845836},
+	"artist": "Beirut",
+	"key": "t69018982",
+        "mood": "strolling"
+        },
+    {
+        "song": "Honeymoon",
+        "location": {"lat":40.7453286, "lon":-73.9855151},
+	"artist": "Lana Del Rey",
+	"key": "t69204225",
+        "mood": "rushing"
+        },
+    {
+        "song": "Blank Space",
+        "location": {"lat":40.74353417699335, "lon":-73.98458361625671},
+	"artist": "Ryan Adams",
+	"key": "t69393056",
+        "mood": "strolling"
+        }
     ]
 }

@@ -25,7 +25,7 @@ var bluePointer = L.icon({
 
 var markArrow = L.icon({
     iconUrl: 'images/markarrow.png',
-    iconSize:     [38, 95], // size of the icon
+    iconSize:     [28, 65], // size of the icon
     iconAnchor:   [12, 60], // point of the icon which will correspond to marker's location
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
@@ -39,6 +39,8 @@ function AddMarkersForSongsInTheMood(songs){
 	}
 	return markers;
 }
+
+
 function ShowWindowForNearestSong(song,marker){
 	marker.bindPopup("<b>Song</b><br />"+ song.song).openPopup();
 	marker.setIcon(yellowNote);
@@ -46,16 +48,22 @@ function ShowWindowForNearestSong(song,marker){
 }
 function GetSongsFromJson(val, chosenMood){
 	var locations = [];
-	for (var i in val ){
-		if (val[i].mood == chosenMood){
-
-			locations.push(val[i]);
-		} 
+	if (chosenMood==""){
+		for (var i in val ){
+			locations.push(val[i]);	 
+		}
+	}
+	else{
+		for (var i in val ){
+			if (val[i].mood == chosenMood){
+				locations.push(val[i]);
+			} 
+		}
 	}
 	return locations;
 }
 
-function GetJsonFile(chosenMood){
+function ShowSongs(chosenMood){
 	$.getJSON( "mydata.json", function( data ) {
 		var items = [];
 		$.each( data, function( key, val ) {
@@ -71,13 +79,17 @@ function GetJsonFile(chosenMood){
 	});
 }
 
+function ShowAllSongs(){
+    ShowSongs("");
+}
+
 window.onload = function() {
 
-    var chosenMood = "mood";
+    var chosenMood = "";
 	chosenMood = window.location.search.replace("?", "").split("=")[1];
 
 
-    GetJsonFile(chosenMood)
+    ShowSongs(chosenMood);
 
 
 		
