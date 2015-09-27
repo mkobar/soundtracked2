@@ -23,6 +23,11 @@
     <script src="js/underscore.js"></script>
     <script src="https://www.parsecdn.com/js/parse-1.2.13.min.js"></script>
     <script src="js/todos.js"></script>
+    	<script>
+		function openWindowWithPost(mood){
+			window.open("mapview.html?mood="+ mood,"_self");
+		}
+	</script>
   </head>
 
 <body alink="ffffff" bgcolor="ffffff" link="999999" text="#ffffff" vlink="999999">
@@ -87,6 +92,24 @@
 
       <img src="images/welcome2.png" height="630" width="357" boarder="0">
 
+      <div class="starter-template">
+<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('rushing')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color: #f7a51b;">
+				RUSHING
+			</button>
+			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('striding')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color: #bccb42;">
+				STRIDING
+			</button>
+			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('walking')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color:#5fb25f;">
+				WALKING
+			</button>
+			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('strolling')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color:#4cb6a8">
+				STROLLING
+			</button>
+			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('lounging')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color:#0098a8">
+				LOUNGING
+			</button>
+	
+      </div>
       <div class="section">
 
         <div id="todo-stats"></div>
@@ -126,20 +149,39 @@
 
       <img src="images/welcome2.png" height="630" width="357" boarder="0">
 
-      <div class="section">
+      <div class="starter-template">
+<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('rushing')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color: #f7a51b;">
+				RUSHING
+			</button>
+			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('striding')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color: #bccb42;">
+				STRIDING
+			</button>
+			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('walking')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color:#5fb25f;">
+				WALKING
+			</button>
+			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('strolling')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color:#4cb6a8">
+				STROLLING
+			</button>
+			<button type="button" class="btn btn-lg btn-block" onclick="openWindowWithPost('lounging')" style="margin-bottom: 15px; font-family: Helvetica Neue; font-weight: bold; color: #fff; background-color:#0098a8">
+				LOUNGING
+			</button>
+	
+		</div>
 
-        <header id="header">
-          <input id="new-todo" placeholder="What needs to be done?" type="text" />
-        </header>
+//     <div class="section">
 
-        <div id="main">
-          <input id="toggle-all" type="checkbox">
-          <label for="toggle-all">Mark all as complete</label>
-          
-          <ul id="todo-list">
-            <img src='images/spinner.gif' class='spinner' />
-          </ul>
-        </div>
+//        <header id="header">
+//          <input id="new-todo" placeholder="What needs to be done?" type="text" />
+//        </header>
+
+//        <div id="main">
+//          <input id="toggle-all" type="checkbox">
+//          <label for="toggle-all">Mark all as complete</label>
+//          
+//          <ul id="todo-list">
+//            <img src='images/spinner.gif' class='spinner' />
+//          </ul>
+//        </div>
 
         <div id="todo-stats"></div>
       </div>
@@ -174,6 +216,10 @@
       </footer>
     </script>
 
+     	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
   </body>
-
 </html>
