@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>rdioUtils.albumWidget() Example</title>
+    <link rel="stylesheet" type="text/css" href="lib/normalize.css">
+    <link rel="stylesheet" type="text/css" href="lib/rdio-utils/rdio-utils.css">
+    <link rel="stylesheet/less" type="text/css" href="main.less">
+
+    <!-- Register your app at http://www.rdio.com/developers/create/ and replace client_id below with yours  -->
+    <!--
+    <script src="https://www.rdio.com/api/api.js?client_id=idniu4ntlzdrfdknocpctjhgsi"></script>
+    -->
+    <!-- for localhost --> 
+    <script src="https://www.rdio.com/api/api.js?client_id=eyel7ji5qrfq7bd2hei6klm5ee"></script>
+    <!-- for github version 
+    <script src="https://www.rdio.com/api/api.js?client_id=jzaljpx3erchrjq463st5csbgu"></script>
+    -->
+    <script src="lib/jquery-1.9.1.min.js"></script>
+    <script src="lib/underscore-1.4.4.min.js"></script>
+    <script src="lib/less-1.3.0.min.js"></script>
+    <script src="lib/rdio-utils/rdio-utils.js"></script>
+    <script src="main.js"></script>
+
+  </head>
+  <body>
+	  <div class="log"></div>
+	  <select id="songlist" size="5" onClick="myFunction()"></select>
+
+	  <div id="saveit-key"></div>
+
+	  <script>
+		  function myFunction() {
+			// set the background color of <body> to yellow
+			//document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+        		var x = document.getElementById("songlist").selectedIndex;
+        		var y = document.getElementById("songlist").options[x].value;
+			document.getElementById("saveit-key").innerHTML = "save to db key="+y+"<br>song= "+document.getElementById("songlist").options[x].innerHTML;
+		}		  
+	  </script>
+  </body>
+</html>
