@@ -23,6 +23,13 @@ var bluePointer = L.icon({
     popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
 });
 
+var markArrow = L.icon({
+    iconUrl: 'images/markarrow.png',
+    iconSize:     [38, 95], // size of the icon
+    iconAnchor:   [12, 60], // point of the icon which will correspond to marker's location
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
 function AddMarkersForSongsInTheMood(songs){
 	var markers = [];
 	for (var i in songs){

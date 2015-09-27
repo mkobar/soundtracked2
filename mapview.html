@@ -16,9 +16,6 @@
     html, body, #map {
       height: 100%;
     }
-    #myModal {
-      style={background-color: white !important;} 
-    }
 
   </style>
   <style>
@@ -39,6 +36,9 @@
 <link rel="stylesheet" href="css/leaflet.css" />
 
 </head>
+<script>
+
+</script>
 <body>
 
   <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: #e50041;">
@@ -59,7 +59,7 @@
           <li class="active" style="color: white;"><a href="#">Home</a></li>
           <li><a href="#about" style="color: white;">About</a></li>
           <li><a href="#contact" style="color: white;">Contact</a></li>
-          <li><a href="#" class="btn" id="openBtn">Drop!</a></li>
+          <li><button id="openBtn" class="btn btn-primary btn-lg" >Drop!</button></li>
         </ul>
       </div>
     </div>
@@ -67,18 +67,24 @@
 
   <div id="map">
   </div>
-        <div id="myModal" class="modal fade" tabindex="-1" role="dialog">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal">×</button>
-              <h3>Modal header</h3>
-          </div>
-          <div class="modal-body">
-            <p>My modal content here…</p>
-          </div>
-          <div class="modal-footer">
-            <button class="btn" data-dismiss="modal">Close</button>
-          </div>
-        </div>
+       <!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onclick="DropSelectedTrack()" data-dismiss="modal">Drop</button>
+      </div>
+    </div>
+  </div>
+</div>
   
 <!-- not https!! so using local version of same file
 	<script src="http://cdn.leafletjs.com/leaflet-0.7.5/leaflet.js"></script>
@@ -107,15 +113,7 @@
     //TODO
     //var marker = L.marker([40.74486725088441, -73.98499131202698], {icon: bluePointer}).addTo(map);
 
-	// show a dropdown on the map
-	// var legend = L.control({position: 'topright'});
-	// legend.onAdd = function (map) {
-	// 	var div = L.DomUtil.create('div', 'info legend');
-	// 	div.innerHTML = '<select><option>1</option><option>2</option><option>3</option></select>';
-	// 	div.firstChild.onmousedown = div.firstChild.ondblclick = L.DomEvent.stopPropagation;
-	// 	return div;
-	// };
-	// legend.addTo(map);
+
 
 	</script>
 

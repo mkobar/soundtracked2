@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+    <meta charset="utf-8">
+    <title>Select your Song</title>
+    <link rel="stylesheet" type="text/css" href="lib/normalize.css">
+    <link rel="stylesheet" type="text/css" href="lib/rdio-utils/rdio-utils.css">
+
+
+
+  </head>
+  <body>
+	  <div class="log"></div>
+	  <select id="songlist" name="songkey" size="5" onClick="myFunction()">
+		  <option value="t69393056">Blank Space - Ryan Adams</option>
+		  <option value="t67821878">Hotline Bling - Drake</option>
+		  <option value="t68618007">What Do You Mean? - Justin Bieber</option>
+		  <option value="t68552037">The Hills - The Weeknd</option>
+		  <option value="t69204225">Honeymoon - Lana Del Rey</option>
+		  <option value="t66340753">679 (feat. Remy Boyz) - Fetty Wap</option>
+		  <option value="t69223631">Weekend (feat. Miguel) - Mac Miller</option>
+		  <option value="t60368451">Trap Queen - Fetty Wap</option>
+		  <option value="t67143036">Where Ya At (feat. Drake) - Future</option>
+		  <option value="t69018982">Gibraltar - Beirut</option>
+		  <option value="t69563849">Infinity - One Direction</option>
+		  <option value="t69271072">On My Mind - Ellie Goulding</option>
+		  <option value="t69405066">Lifeless - Draenor</option>
+		  <option value="t41904969">Look Me in the Face - Jerk Circus</option>
+		  <option value="t66136860">Good For You - Selena Gomez</option>
+		  <option value="t67820642">Back To Back - Drake</option>
+		  <option value="t63745991">Stitches - Shawn Mendes</option>	  
+	  </select>
+
+	  <div id="saveit-key"></div>
+
+	  <script>
+
+		  function myFunction() {
+			// set the background color of <body> to yellow
+			//document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
+        	var x = document.getElementById("songlist").selectedIndex;
+        	var y = document.getElementById("songlist").options[x].value;
+			document.getElementById("saveit-key").innerHTML = "save to db key="+y+"<br>song= "+document.getElementById("songlist").options[x].innerHTML;
+		}		  
+	  </script>
+  </body>
+</html>
