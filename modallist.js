@@ -11,11 +11,19 @@ $(document).ready(function() {
         
 });
 
-  function DropSelectedTrack(){
+var globalmood = "no mood";
+
+
+function onLocationFound(e) {
     var song = document.getElementById("saveit-key").innerHTML.split('=')[2];
+    var marker = L.marker(e.latlng, {icon: markArrow}).addTo(map);
+	marker.bindPopup("<b>You dropped the song:</b><br />"+ song + "<br /><b>You're in the mood:</b><br />" + globalmood).openPopup();
 
-	var marker = L.marker([40.74486725088441, -73.98499131202698], {icon: markArrow}).addTo(map);
+}
 
-	marker.bindPopup("<b>You dropped the song:</b><br />"+ song).openPopup();
+  function DropSelectedTrack(mood){
+  	globalmood = mood;
+	map.locate({setView: true, maxZoom: 16});
+	map.on('locationfound', onLocationFound);
 
   }
