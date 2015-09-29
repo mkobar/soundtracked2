@@ -18,4 +18,8 @@ Using Spotify or Apple Music you can in the same way you like or rate your track
 
 More information [here] (http://devpost.com/software/soundtracked)
 
-Demo is [here] (http://mkobar.github.io/soundtracked)
+App Demo is [here] (http://mkobar.github.io/soundtracked2)
+
+   Grabbing an Rdio list of tracks [here] (http://mkobar.github.io/soundtracked2/index2.html)
+
+   Playing an Rdio track [here] (http://mkobar.github.io/soundtracked2/play2.html)
