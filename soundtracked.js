@@ -33,13 +33,11 @@ var markArrow = L.icon({
 function AddMarkersForSongsInTheMood(songs){
 	var markers = [];
 	for (var i in songs){
-		//alert("lat: " + locations[i].lat +", lon: "+locations[i].lon);
 		var marker = L.marker([songs[i].location.lat, songs[i].location.lon], {icon: blueNote}).addTo(map);
 		markers.push(marker);
 	}
 	return markers;
 }
-
 
 function ShowWindowForNearestSong(song,marker){
 	marker.bindPopup("<b>Song</b><br />"+ song.song).openPopup();
@@ -73,9 +71,7 @@ function ShowSongs(chosenMood){
 			if (markers.length > 0){
 				ShowWindowForNearestSong(songs[0],markers[0]);
 			}
-			
-
-			});
+		});
 	});
 }
 
@@ -87,12 +83,6 @@ window.onload = function() {
 
     var chosenMood = "";
 	chosenMood = window.location.search.replace("?", "").split("=")[1];
-
-
     ShowSongs(chosenMood);
-
-
-		
-
     return false;
 }
