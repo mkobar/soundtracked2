@@ -23,3 +23,7 @@ App Demo is [here] (http://mkobar.github.io/soundtracked2)
    Grabbing an Rdio list of tracks [here] (http://mkobar.github.io/soundtracked2/index2.html)
 
    Playing an Rdio track [here] (http://mkobar.github.io/soundtracked2/play2.html)
+
+---
+Released under the [MIT License] (http://opensource.org/licenses/MIT)
+Copyright @ 2015 [RKOSecurity] (http://www.rkosecurity.com)
